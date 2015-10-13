@@ -1,0 +1,16 @@
+from time import localtime
+
+departure = {7.10: 'Northbound',
+              7.20: 'SouthBound',
+              7.30: 'SouthBound',
+              7.40: 'Northbound', }
+
+time_now = localtime()
+time = time_now
+
+for departures in sorted(departure.keys()):
+    if time < departure:
+        print departures
+        break
+else:
+    print 'Unknown, You should call a taxi if possible'
