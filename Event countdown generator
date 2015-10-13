@@ -1,0 +1,7 @@
+#Countdown generatior
+
+import datetime
+now = datetime.datetime.now()
+event = datetime.datetime(2015,8,10)
+
+print "event in ... ", event - now
