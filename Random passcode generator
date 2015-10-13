@@ -1,0 +1,13 @@
+#Random passcode generator
+
+import random
+
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+pw_length = 8
+mypc = ""
+
+for i in range(pw_length):
+    next_index = random.randrange(len(alphabet))
+    mypc = mypc + alphabet[next_index]
+
+print mypc
